@@ -10,27 +10,20 @@
     <header>
       <div class="overlay"></div>
       <div class="container">
-        <h1 class="title">Find your film</h1>
-        <a href="/watchlist.html" class="watchlist-link">My Watchlist</a>
-        <div class="movie-search">
-          <img
-            src="./img/search-icon.png"
-            alt="Search icon"
-            class="search-icon"
-          />
-          <input type="text" name="movie-title" placeholder="Search for a movie" class="search-input" />
-          <button class="search-btn">Search</button>
-        </div>
+        <h1 class="title">My Watchlist</h1>
+        <a href="/index.html" class="watchlist-link">Search for movies</a>
       </div>
     </header>
     <main>
       <div class="container">
-        <div class="main-content main-content-empty">
-          <div class="empty-placeholder">
-            <img src="./img/film-icon.png" alt="Film icon">
-            <h2>Start exploring</h2>
+        <div class="main-content main-content-pt35 main-content-empty">
+          <div class="watchlist-empty">
+            <p class="message">Your watchlist is looking a little empty...</p>
+            <button class="add-movies">
+              <img src="./img/plus-icon.png" alt="Plus icon">
+              Let's add some movies!
+            </button>
           </div>
-          <p class="message hidden">Unable to find what you’re looking for. Please try another search.</p>
 
 
           <!-- <section class="movie-item">
@@ -47,8 +40,8 @@
                 <p class="movie-duration">117 min</p>
                 <p class="movie-genre">Action, Drama, Sci-fi</p>
                 <button class="movie-action">
-                  <img src="./img/plus-icon.png" alt="Plus icon">
-                  Watchlist
+                  <img src="./img/minus-icon.png" alt="Minus icon">
+                  Remove
                 </button>
               </div>
               <p class="movie-descr">A blade runner must pursue and terminate four replicants who stole a ship in space, and have returned to Earth to find their creator.</p>

@@ -134,13 +134,13 @@ main {
 }
 
 .main-content-empty {
-  padding: 0;
+  padding: 0 !important;
   justify-content: center;
   align-items: center;
 }
 
 .empty-placeholder {
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 8px;
@@ -162,7 +162,7 @@ main {
   text-align: center;
 }
 
-.not-found {
+.message {
   max-width: 32rem;
   color: #dfdddd;
   font-size: 1.8rem;
@@ -247,4 +247,39 @@ main {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 2rem;
+}
+
+/* ================== watchlist.html styles ==================== */
+
+.main-content-pt35 {
+  padding-top: 3.5rem;
+}
+
+.watchlist-empty {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.watchlist-empty .message {
+  max-width: 100%;
+}
+
+.add-movies {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  background-color: #fff;
+  border: none;
+  color: #363636;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2rem;
+  cursor: pointer;
+}
+
+.add-movies img {
+  width: 18px;
+  height: 18px;
 }
