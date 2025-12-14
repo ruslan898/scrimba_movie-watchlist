@@ -18,43 +18,28 @@
             alt="Search icon"
             class="search-icon"
           />
-          <input type="text" name="movie-title" placeholder="Search for a movie" class="search-input" />
-          <button class="search-btn">Search</button>
+          <input
+            type="text"
+            name="movie-title"
+            placeholder="Search for a movie"
+            class="search-input"
+            id="search-input"
+          />
+          <button class="search-btn" id="search-btn">Search</button>
         </div>
       </div>
     </header>
     <main>
       <div class="container">
-        <div class="main-content main-content-empty">
-          <div class="empty-placeholder">
-            <img src="./img/film-icon.png" alt="Film icon">
+        <div class="main-content" id="main-content-search">
+          <div class="empty-placeholder" id="empty-placeholder">
+            <img src="./img/film-icon.png" alt="Film icon" />
             <h2>Start exploring</h2>
           </div>
-          <p class="message hidden">Unable to find what you’re looking for. Please try another search.</p>
-
-
-          <!-- <section class="movie-item">
-            <img src="./img/movie-poster.jpg" alt="movie-poster" class="movie-poster">
-            <div class="movie-info">
-              <div class="movie-info-header">
-                <h2 class="movie-title">Blade Runner</h2>
-                <div class="movie-rating">
-                  <img src="./img/star-icon.png" alt="Star icon">
-                  8.1
-                </div>
-              </div>
-              <div class="movie-info-additional">
-                <p class="movie-duration">117 min</p>
-                <p class="movie-genre">Action, Drama, Sci-fi</p>
-                <button class="movie-action">
-                  <img src="./img/plus-icon.png" alt="Plus icon">
-                  Watchlist
-                </button>
-              </div>
-              <p class="movie-descr">A blade runner must pursue and terminate four replicants who stole a ship in space, and have returned to Earth to find their creator.</p>
-            </div>
-          </section> -->
-
+          <p class="message" id="message-search">
+            Unable to find what you’re looking for. Please try another search.
+          </p>
+          <div id="movie-list-container"></div>
         </div>
       </div>
     </main>
