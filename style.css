@@ -280,30 +280,42 @@ main {
 }
 
 .watchlist-empty {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   align-items: center;
+  justify-content: center;
 }
 
 .watchlist-empty .message {
+  position: static;
   max-width: 100%;
+  margin: 0;
 }
 
-.add-movies {
+.add-movies-btn {
   display: flex;
   align-items: center;
   gap: 0.7rem;
   background-color: #fff;
   border: none;
+  cursor: pointer;
+}
+
+.add-movies-btn img {
+  width: 18px;
+  height: 18px;
+}
+
+.add-movies-btn a {
   color: #363636;
   font-size: 1.4rem;
   font-weight: 700;
   line-height: 2rem;
-  cursor: pointer;
-}
-
-.add-movies img {
-  width: 18px;
-  height: 18px;
+  text-decoration: none;
 }

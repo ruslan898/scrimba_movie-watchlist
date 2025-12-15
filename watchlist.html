@@ -16,38 +16,15 @@
     </header>
     <main>
       <div class="container">
-        <div class="main-content main-content-pt35 main-content-empty">
-          <div class="watchlist-empty">
+        <div class="main-content main-content-pt35" id="watchlist">
+          <div class="watchlist-empty" id="watchlist-empty">
             <p class="message">Your watchlist is looking a little empty...</p>
-            <button class="add-movies">
-              <img src="./img/plus-icon.png" alt="Plus icon">
-              Let's add some movies!
+            <button class="add-movies-btn" id="add-movies-btn">
+              <img src="./img/plus-icon.png" alt="Plus icon" />
+              <a href="/index.html">Let's add some movies!</a>
             </button>
           </div>
-
-
-          <!-- <section class="movie-item">
-            <img src="./img/movie-poster.jpg" alt="movie-poster" class="movie-poster">
-            <div class="movie-info">
-              <div class="movie-info-header">
-                <h2 class="movie-title">Blade Runner</h2>
-                <div class="movie-rating">
-                  <img src="./img/star-icon.png" alt="Star icon">
-                  8.1
-                </div>
-              </div>
-              <div class="movie-info-additional">
-                <p class="movie-duration">117 min</p>
-                <p class="movie-genre">Action, Drama, Sci-fi</p>
-                <button class="movie-action">
-                  <img src="./img/minus-icon.png" alt="Minus icon">
-                  Remove
-                </button>
-              </div>
-              <p class="movie-descr">A blade runner must pursue and terminate four replicants who stole a ship in space, and have returned to Earth to find their creator.</p>
-            </div>
-          </section> -->
-
+          <div id="movie-list-container"></div>
         </div>
       </div>
     </main>
